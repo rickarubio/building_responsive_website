@@ -87,3 +87,7 @@ h2 {
   margin: 15px 0px;
   text-align: center;
 }
+
+img {
+  max-width: 100%;
+}
