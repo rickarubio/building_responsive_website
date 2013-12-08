@@ -94,7 +94,7 @@ img {
 
 /*media queries*/
 
-/* Tablet ----------- */
+/* Medium Resolution ----------- */
 @media screen and (max-width: 1024px) {
   #intro {
     width: 100%; 
@@ -139,8 +139,8 @@ img {
 }
 
 
-/* Small ----------- */
-@media screen and (max-width : 480px) {
+/* Smaller Resolution ----------- */
+@media screen and (max-width : 650px) {
   .grid_1,
   .grid_2,
   .grid_3,
