@@ -63,9 +63,8 @@ h2 {
   text-align: center;
 }
 
-#nature-pictures img {
-  border: 8px solid #666666;
-  margin: 0 0 20px 0;
+#featured-video iframe {
+  max-width: 75%;
 }
 
 #funny-pictures img {
@@ -89,7 +88,7 @@ h2 {
   text-align: center;
 }
 
-img {
+img, object {
   max-width: 100%;
 }
 

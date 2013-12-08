@@ -22,7 +22,7 @@
       </ul>
     </div>
       <div id="intro" class="grid_12 omega">
-        <h1>Check out some of my web development work!</h1>
+        <h1 id="fittext1">Check out some of my web development work!</h1>
         <p><a href="/portfolio/HTML_CSS_projects/" class="btn">Browse Ricardo's Projects</a></p>
       </div>
 
@@ -38,10 +38,9 @@
         <img src="img/banksy.JPG" alt="Banksy">
       </div>
 
-      <div id="nature-pictures" class="grid_8">
-        <h2>Antelope Island</h2>
-        <p>This is a great state park to visit if you ever go traveling in Utah.</p>
-        <img src="img/antelope_island.jpg" alt="Antelope Island">
+      <div id="featured-video" class="grid_8">
+        <h2>FitVid.js Video Example</h2>
+        <iframe width="320" height="315" src="http://www.youtube.com/embed/wZZ7oFKsKzY" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div id="funny-pictures" class="grid_4 omega">
@@ -88,5 +87,22 @@
         <p>&copy; 2013 Ricardo A. Rubio. All Rights Reserved.</p>
       </div>
   </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>
+    $(function() {
+      causeRepaintOn = $("h1, h2, h3, p");
+      $(window).resize(function() {
+        causeRepaintOn.css("z-index", 1);
+      });
+    });
+  </script>
+  <script src="jquery.fittext.js"></script>
+  <script src="jquery.fitvids.js"></script>
+  <script>
+    $("#featured-video").fitVids();
+  </script>
+  <script type="text/javascript">
+    $("#fittext1").fitText(2.2);
+  </script>
 </body>
 </html>
